@@ -1,6 +1,24 @@
-<h2 class="my-5">Hola!</h2>
-<div>
-    <h3>Mi nombre es César Osses y soy alumno del curso de Ruby on Rails</h3>
-    <div><%= image_tag "rails_2", class:"imagen-rails" %></div>
-</div>
+<h1 class="my-5">¡Hola Mundo!</h1>
 
+<h3 class="mb-5">Bienvenido a mi primera aplicación de Rails!</h3>
+
+
+<form action="/home/pagina_dos" method="get">
+    <div class="mb-5">
+        <h5 class="mb-3">Ingresa tu nombre</h5>
+        <label for="nombre">Nombre</label>
+        <input type="text" name="nombre">
+    </div>
+    <div class="mb-5">
+        <h5 class="mb-3">Selecciona el curso en el que estás</h5>
+        <input type="radio" value="Ruby on Rails" id="ror" name="curso">
+        <label for="ror">Ruby on Rails</label><br>
+        <input type="radio" value="Python" id="python" name="curso">
+        <label for="python">Python</label><br>
+        <input type="radio" value="Javascript" id="js" name="curso">
+        <label for="js">Javascript</label>
+
+    </div>
+
+    <input type="submit" value="Enviar">
+</form>
